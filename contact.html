@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en"> <!-- Language set to English for translation purposes -->
 <head>
-    <meta charset="UTF-8">
-    <title>اتصل بنا - منظم الكورسات</title>
-    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS الخارجي الموحد -->
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Course Organizer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linked to External CSS -->
 </head>
 <body>
 
-    <!-- الهيكل الدلالي المطلوب -->
     <header>
-        <h1>تواصل معنا</h1>
+        <h1>Get in Touch</h1>
     </header>
 
     <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="courses.html">كورساتي</a>
-        <a href="add-course.html">إضافة كورس</a>
-        <a href="contact.html">اتصل بنا</a>
+        <a href="index.html">Home</a>
+        <a href="courses.html">My Courses</a>
+        <a href="add-course.html">Add Course</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
 
     <main>
         <section>
-            <h2>يسعدنا استقبال استفساراتكم</h2>
-            <!-- نموذج التواصل المطلوب مع الحقول المحددة -->
+            <h2>Contact Form</h2>
             <form>
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email">البريد الإلكتروني:</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <label for="email">Email Address:</label>
+                <!-- Email field is now completely empty without a placeholder -->
+                <input type="email" id="email" name="email" required> 
 
-                <label for="note">ملحوظة:</label>
-                <textarea id="note" name="note" rows="5" placeholder="اكتب ملحوظاتك هنا..."></textarea>
+                <label for="note">Note:</label>
+                <textarea id="note" name="note" rows="5"></textarea>
 
-                <button type="submit">إرسال البيانات</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة | مشروع تكنولوجيا الإنترنت</p>
+        <p>&copy; 2026 Internet Technology Individual Task</p>
     </footer>
 
 </body>
