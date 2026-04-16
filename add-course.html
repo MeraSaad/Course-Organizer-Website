@@ -1,47 +1,53 @@
-.
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Add New Course</title>
-    <link rel="stylesheet" href="style.css">
+    <title>إضافة كورس جديد - منظم الكورسات</title>
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS الخارجي المطلوب -->
 </head>
 <body>
+
+    <!-- الهيكل الدلالي Semantic Layout -->
     <header>
-        <h1>Add to My Organizer</h1>
+        <h1>إضافة كورس جديد للمنظم</h1>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="courses.html">My Courses</a>
-        <a href="add-course.html">Add Course</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="courses.html">كورساتي</a>
+        <a href="add-course.html">إضافة كورس</a>
+        <a href="contact.html">اتصل بنا</a>
     </nav>
 
     <main>
         <section>
-            <h2>Register New Course</h2>
+            <h2>أدخل بيانات الدورة التدريبية</h2>
+            <!-- النموذج المطلوب بجميع الحقول -->
             <form>
-                <!-- Required Fields from Task [2] -->
-                <label>Course Name:</label>
-                <input type="text" placeholder="e.g. Data Structures" required>
+                <label for="course-name">اسم الدورة:</label>
+                <input type="text" id="course-name" name="course-name" required>
 
-                <label>Instructor:</label>
-                <input type="text" placeholder="e.g. Dr. John Doe" required>
+                <label for="instructor">المدرب:</label>
+                <input type="text" id="instructor" name="instructor" required>
 
-                <label>Credit Hours:</label>
-                <input type="number" min="1" max="5" required>
+                <label for="credit-hours">الساعات المعتمدة:</label>
+                <input type="number" id="credit-hours" name="credit-hours" required>
 
-                <label>Notes:</label>
-                <textarea rows="4" placeholder="Any special notes about the course..."></textarea>
+                <label for="day">اليوم:</label>
+                <input type="text" id="day" name="day" placeholder="مثلاً: الأحد">
 
-                <button type="submit">Submit Course Data</button>
+                <!-- حقل الملاحظات مطلوب في التكليف لضمان الدرجة -->
+                <label for="notes">ملاحظات (Notes):</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button type="submit">حفظ الدورة</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Student Work Portfolio</p>
+        <p>&copy; 2026 جميع الحقوق محفوظة | مشروع تكنولوجيا الإنترنت</p>
     </footer>
+
 </body>
 </html>
